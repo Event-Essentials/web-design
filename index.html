@@ -6,10 +6,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="tailwind.css" rel="stylesheet">
         <style type="text/css">
         body {
             font-family: 'Ubuntu', 'Work Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .oswald {
+            font-family: 'Oswald', "Helvetica Neue", Arial, sans-serif;
+        }
+        .oxygen {
+            font-family: 'Oxygen', "Helvetica Neue", Arial, sans-serif;
         }
         </style>
     </head>
@@ -133,12 +141,125 @@
 
             <!-- Content -->
             
-            <main class=" pl-20 pt-16 pr-4 pb-4">
+            <main class=" pl-20 pt-16 pr-4 pb-4 text-gray-700 text-sm">
                 <div class="header text-gray-600 flex items-center justify-between">
                     <h1 class="text-primary-dark text-xl font-light my-3">Dashboard</h1>
                 </div>
                 <div class="content bg-white border-1 border-gray-300 p-4 min-h-96">
-                    
+                    <div class="alert bg-secondary text-white text-xs px-4 py-3 mb-4 rounded-sm flex item-center justify-between">
+                        <div>
+                            <strong class="mr-2">Notice</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </div>
+                        <a href="#close" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </a>
+                    </div>
+                    <div class="alert bg-green-600 text-white text-xs px-4 py-3 mb-4 rounded-sm flex item-center justify-between">
+                        <div>
+                            <strong class="mr-2">Notice</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </div>
+                        <a href="#close" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </a>
+                    </div>
+                    <div class="alert bg-red-600 text-white text-xs px-4 py-3 mb-4 rounded-sm flex item-center justify-between">
+                        <div>
+                            <strong class="mr-2">Notice</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </div>
+                        <a href="#close" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </a>
+                    </div>
+
+                    <div class="grid gap-4 grid-flow-col auto-cols-max mb-4">
+                        <a href="#figure" class="figure group bg-gray-300 px-8 py-6 rounded-sm border-1 border-gray-400 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white">
+                            <div class="icon rounded-full bg-primary text-white p-5 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart w-8 h-8 p-0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            </div>
+                            <div class="info">
+                                <div class="label text-primary-dark font-bold text-base group-hover:text-white">Orders</div>
+                                <div class="value font-light text-3xl">793</div>
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group bg-gray-300 px-8 py-6 rounded-sm border-1 border-gray-400 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white">
+                            <div class="info">
+                                <div class="label text-center text-primary-dark font-bold text-base group-hover:text-white">Cancelled Orders</div>
+                                <div class="value text-center font-light text-3xl">793</div>
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group highlight bg-primary-light px-8 py-6 rounded-sm border-1 border-primary text-white flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white">
+                            <div class="icon rounded-full bg-primary text-white p-5 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart w-8 h-8 p-0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            </div>
+                            <div class="info">
+                                <div class="label text-gray-700 font-bold text-base group-hover:text-white">Vendors</div>
+                                <div class="value text-gray-600 font-light text-3xl group-hover:text-white">10,237</div>
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group bg-gray-300 px-8 py-6 rounded-sm border-1 border-gray-400 flex items-center justify-center hover:bg-secondary hover:border-secondary hover:text-white">
+                            <div class="icon rounded-full bg-secondary text-white p-5 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart w-8 h-8 p-0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            </div>
+                            <div class="info">
+                                <div class="label text-secondary-dark font-bold text-base group-hover:text-white">Volunteers</div>
+                                <div class="value font-light text-3xl">0</div>
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group bg-primary-darkest text-white px-8 py-6 rounded border-t-4 border-primary-light flex items-center justify-center hover:bg-primary-dark hover:border-primary hover:text-white">
+                            <div class="icon rounded-full bg-white text-primary p-5 mr-4 group-hover:bg-primary group-hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart w-8 h-8 p-0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            </div>
+                            <div class="info">
+                                <div class="label text-primary font-bold text-base group-hover:text-white">Volunteers</div>
+                                <div class="value font-light text-3xl">0</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid gap-4 grid-flow-col auto-cols-max mb-4">
+                        <a href="#figure" class="figure group text-center bg-primary-dark text-gray-400 px-8 py-6 rounded border-t-4 border-green-300 min-w-56 hover:bg-primary-darkest hover:border-primary hover:text-white">
+                            <div class="text-white font-bold text-5xl oswald tracking">974</div>
+                            <div class="text-white opacity-60 font-normal text-sm uppercase leading-9 tracking-widest">Orders</div>
+                            <div class="text-green-300 font-normal text-sm flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-1 feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                                14 today
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group text-center bg-primary-dark text-gray-400 px-8 py-6 rounded border-t-4 border-red-400 min-w-56 hover:bg-primary-darkest hover:border-primary hover:text-white">
+                            <div class="text-white font-bold text-5xl oswald tracking">1,209</div>
+                            <div class="text-white opacity-60 font-normal text-sm uppercase leading-9 tracking-widest">Volunteers</div>
+                            <div class="text-red-400 font-normal text-sm flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-1 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg> 
+                                27 today
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group text-center bg-primary-darkest text-gray-400 px-8 py-6 rounded border-t-4 border-green-400 min-w-56 hover:bg-primary-dark hover:border-primary hover:text-white">
+                            <div class="text-white font-bold text-5xl oswald tracking">85</div>
+                            <div class="text-white opacity-60 font-normal text-sm uppercase leading-9 tracking-widest">Vendors</div>
+                            <div class="text-green-400 font-normal text-sm flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-1 feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                                4 today
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group text-center bg-primary-darkest text-gray-400 px-8 py-6 rounded border-t-4 border-red-400 min-w-56 hover:bg-primary-dark hover:border-primary hover:text-white">
+                            <div class="text-white font-bold text-5xl oswald tracking">17,239</div>
+                            <div class="text-white opacity-60 font-normal text-sm uppercase leading-9 tracking-widest">Sponsors</div>
+                            <div class="text-red-400 font-normal text-sm flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-1 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg> 
+                                231 today
+                            </div>
+                        </a>
+                        <a href="#figure" class="figure group relative text-center bg-primary-darkest text-gray-400 px-8 py-6 rounded border-t-4 border-red-400 min-w-56 hover:bg-primary-dark hover:border-primary hover:text-white">
+                            <div class="text-white font-bold text-5xl oswald tracking">17,239</div>
+                            <div class="text-white opacity-60 font-normal text-sm uppercase leading-9 tracking-widest">Sponsors</div>
+                            <div class="text-red-400 font-normal text-sm flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-1 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg> 
+                                231 today
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart w-32 h-32 p-0 absolute bottom-0 right-0 opacity-10"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                        </a>
+                    </div>
+
                 </div>
             </main>
         </div>
